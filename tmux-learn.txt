@@ -51,7 +51,9 @@ prefix + , (逗号）：更改window名称。
 
     tmux kill-session -a -t py35 : 删除除了py35以外的所有session
 
-作者：赤乐君
-链接：https://www.jianshu.com/p/fd3bbdba9dc9
-來源：简书
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+
+4、配置
+
+注意：让配置生效，要在tmux的命令行中执行source-file ～/.tmux.conf.进入命令行的方式prefix（切换入tmux控制的组合键、原始是ctrl+b）+：
+
+详见：https://www.cnblogs.com/chjbbs/p/5689011.html
