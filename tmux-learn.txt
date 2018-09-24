@@ -10,7 +10,48 @@ tmux是一个优秀的终端复用软件，即使非正常掉线，也能保证�
 
 
 1、分割pane
+prefisx:ctrl+b(控制命令标志)
+prefix+":横向切
+prefix+%：纵向切
+prefix + z : 把当前一个pane放大（zoom in),再按一次就恢复原位
+prefix + 上下左右的箭头 ：在pane之间switch
+2、windows
+prefix + c : 创建一个新的window。
+prefix + 数字1，2，3 : 因为能看到不同window的数字编号，所以直接输入想去的window的数字编号即可
+refix + & ： 关闭当前window
+prefix + , (逗号）：更改window名称。
+3、session：
+5 Session
 
+查看所有的session（在terminal输入）
 
+    tmux ls : 这个命令是在terminal里输入的。当前正常运作中的tmux server会显示（attached）。没有的话就是已关闭，tmux server在后台运行。
 
+更名session（tmux状态下输入）
 
+    prefix + $ : 更名后好让自己知道每一个session是用来做什么的。通常一个session对应一个project
+
+创建session的时候直接命名(在terminal输入）
+
+    tmux new -s py35 : 新建一个名为py35的session
+
+断开一个session(detached) （tmux状态下输入）
+
+    prefix + d ：退出session。在只有一个window的状态下，直接输入exit也能退出
+
+重新连接某一个session wich name（在terminal输入）
+
+    tmux a -t py35 : 重新连接py35 session。这里的a是attach的意思
+
+偷懒连接上一个session（在terminal输入）
+
+    tmux a : 如果只有一个session的话，这个是最快的连接方法
+
+删除session（在terminal输入）
+
+    tmux kill-session -a -t py35 : 删除除了py35以外的所有session
+
+作者：赤乐君
+链接：https://www.jianshu.com/p/fd3bbdba9dc9
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
