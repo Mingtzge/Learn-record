@@ -14,5 +14,10 @@
 
 安装过程中出现一个问题：g++: internal compiler error: Killed (program cc1plus)  问题原因：给自己的ubuntu虚拟机配置的内存太小了，关掉ubuntu之后在设置中将内存大小设置为了4G。问题解决。
 
+例程使用：
+在安装包的目录下，有samples这个文件夹。里面有针对于各种平台的例子。在这里使用了/home/parallels/apps/opencv-3.4.2/samples/cpp目录下的image例子
+使用方法，将examples_cmake中的CMakeLists.txt文件拷到上一层目录，在根据自己想要编译的.cpp文件，去修改CMakeLists.txt文件，然后再cmake再make即可生成可执行文件。
+参考博客：https://blog.csdn.net/Wuzebiao2016/article/details/79252731
+
 
 
