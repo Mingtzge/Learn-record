@@ -1,0 +1,32 @@
+在伯乐在线上去git进行了补充学习，记录如下：http://blog.jobbole.com/114297/
+
+    复刻（fork） 是对存储仓库（repository）进行的远程的、服务器端的拷贝，从源头上就有所区别。复刻实际上不是 Git 的范畴。它更像是个政治/社会概念。
+    克隆（clone） 不是复刻，克隆是个对某个远程仓库的本地拷贝。克隆时，实际上是拷贝整个源存储仓库，包括所有历史记录和分支。
+    分支（branch） 是一种机制，用于处理单一存储仓库中的变更，并最终目的是用于与其他部分代码合并。
+
+这个很实用：http://rogerdudler.github.io/git-guide/index.zh.html
+
+log
+
+如果你想了解本地仓库的历史记录，最简单的命令就是使用:
+git log
+你可以添加一些参数来修改他的输出，从而得到自己想要的结果。 只看某一个人的提交记录:
+git log --author=bob
+一个压缩后的每一条提交记录只占一行的输出:
+git log --pretty=oneline
+或者你想通过 ASCII 艺术的树形结构来展示所有的分支, 每个分支都标示了他的名字和标签:
+git log --graph --oneline --decorate --all
+看看哪些文件改变了:
+git log --name-status
+这些只是你可以使用的参数中很小的一部分。更多的信息，参考：
+git log --help
+
+内建的图形化 git：
+gitk
+彩色的 git 输出：
+git config color.ui true
+显示历史记录时，每个提交的信息只显示一行：
+git config format.pretty oneline
+交互式添加文件到暂存区：
+git add -i
+
