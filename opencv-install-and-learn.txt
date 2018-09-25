@@ -1,0 +1,18 @@
+首先：搭建ubuntu环境下opencv开发环境。
+首先安装了python2和python3环境下的pip
+再通过pip安装了python2和python3对应的opencv版本
+安装方法：python2：sudo pip install opencv-python
+          python3：sudo pip install opencv -python
+在测试的过程中，python2中能够成功：import cv2没有问题，但是在python3就会出错，还没有找到原因。按炸ung方法参照博客：https://blog.csdn.net/u011511601/article/details/79395713
+安装过程中出现can't import name main的情况，百度之后在这篇博客中找到了解决方案：https://blog.csdn.net/zong596568821xp/article/details/80410416
+
+上述安装环境是安装真对于python的，对了搭建电脑里完整的opencv工作环境，参考了博客：https://blog.csdn.net/konia_zhang/article/details/76388114
+下载地址：https://opencv.org/releases.html  下载版本：3.4.2
+
+目前就安装了opencv，其他的相关依赖还没有使用到。
+
+
+安装过程中出现一个问题：g++: internal compiler error: Killed (program cc1plus)  问题原因：给自己的ubuntu虚拟机配置的内存太小了，关掉ubuntu之后在设置中将内存大小设置为了4G。问题解决。
+
+
+
