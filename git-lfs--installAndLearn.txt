@@ -1,0 +1,9 @@
+由于工作需要，现在开始对git-lfs进行学习，学习其安装和使用的基本方法记录如下：
+
+安装：Git LFS
+
+$ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+$ sudo apt-get install git-lfs
+$ git lfs install
+ 
+参考：https://blog.csdn.net/u014454538/article/details/81282369
