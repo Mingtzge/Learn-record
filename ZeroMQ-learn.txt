@@ -58,5 +58,29 @@ ZeroMQ将消息通信分成4种模型，分别是一对一结对模型（Exclusi
 
 详见：https://www.cnblogs.com/rainbowzc/p/3357594.html
 
+安装步骤：
+1、下载安装包
+
+2、解压缩
+
+3、进入到对应的文件夹下
+
+4、./configure
+
+5、make
+
+6、make install
 
 
+试运行过程：
+
+参考网上运行了服务器和客户端的程序：client.cpp\server.cpp
+
+刚开始运行的时候提示没有找到libzmq.so.5
+找到原因：对应的目录里没有这个库。添加方法：（先要找到你的这个文件所在的地方，我的是/usr/local/lib）
+1、进入/etc目录（注意：后续步骤需要root权限才能操作）
+2、修改lp.so.conf(sudo vim lp.so.conf)
+3、在后面添加 echo "/usr/local/lib">>/etc/ld.so.conf
+4、然后写sudo ldconfig
+现在就可以了。
+部分详见博客：https://blog.csdn.net/tomorrowmorningj/article/details/66982261
