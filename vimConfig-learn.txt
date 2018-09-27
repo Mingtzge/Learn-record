@@ -1,0 +1,9 @@
+为了使用方便，今天学习如何配置自己的vim。使其更具与亲和力。
+
+首先，选用vundle统一管理vim的插件。使用见：https://linux.cn/article-9416-1.html
+
+解决粘贴带注释的问题，参考：https://blog.csdn.net/kwame211/article/details/77964106
+
+参考了一篇配置特别全的文章，实际测试，没有什么问题，使用见：https://blog.csdn.net/jjj96321/article/details/71305156
+
+增添（），{}，[]等常用自动补全的问题。参考：https://blog.csdn.net/yangss123/article/details/77606421
